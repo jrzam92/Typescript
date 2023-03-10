@@ -1,5 +1,6 @@
 // // Los tipos son para poner reglas o constrain como argumentos, 
 // // este no existe en JS 
+//Este tipo no se puede expandir, lo que solo se considera como tipo 
 // type Hero={
 //     name:string;
 //     age:number;

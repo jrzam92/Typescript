@@ -2,6 +2,7 @@ interface Client{
     name:string;
     age?:number;
     address:Adress;//Usando la interfaz de direccion
+    getFullAddress(id:string):string//como tal es una interfaz que esta esperando al mandarlo en la clase 
 }
 //Interfaz de direccion 
 interface Adress{
@@ -16,6 +17,9 @@ const client:Client={
         id:125,
         zip:'036458',
         city:'Ottawa'
+    },
+    getFullAddress(id:string){
+        return this.address.city;
     }
 }
 const client2:Client={
@@ -25,5 +29,8 @@ const client2:Client={
         id:126,
         zip:'456845',
         city:'Toronto'
+    },
+    getFullAddress(id:string){
+        return this.address.city;
     }
 }
